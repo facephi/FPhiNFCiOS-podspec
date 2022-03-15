@@ -10,12 +10,13 @@ Pod::Spec.new do |spec|
 
   spec.name         = "FPhiNFCiOS"
   spec.version      = "1.0.0"
-  spec.summary      = "Component for OCR and liveness test"
-  spec.ios.deployment_target  = "10.0"
+  spec.swift_version = '5.0'
+  spec.summary      = "Component for NFC and liveness test"
+  spec.ios.deployment_target  = "13.0"
   spec.static_framework = true
 
   spec.description  = <<-DESC
-  Safe digital onboarding solution with the best real time OCR in the market with facial liveness test.
+  NFC LIBRERY.
   DESC
   spec.homepage     = "https://www.facephi.com"
   spec.license = { :type => "Commercial", 
