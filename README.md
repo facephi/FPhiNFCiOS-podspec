@@ -1,0 +1,1 @@
+# FPhiNFCiOS-podspec
