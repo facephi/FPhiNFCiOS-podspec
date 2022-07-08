@@ -10,7 +10,6 @@ Pod::Spec.new do |spec|
 
   spec.name         = "FPhiNFCiOS"
   spec.version      = "$VERSION_RELEASE"
-  spec.swift_version = '5.0'
   spec.summary      = "Component for NFC and liveness test"
   spec.ios.deployment_target  = "13.0"
   spec.static_framework = true
