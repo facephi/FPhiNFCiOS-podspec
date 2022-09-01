@@ -27,8 +27,11 @@ Pod::Spec.new do |spec|
   spec.author             = { "Facephi" => "developer@facephi.com" }
   spec.source       = { :git => "https://github.com/facephi/FPhiNFCiOS-podspec.git", :tag => "#{spec.version}" }
 
-  
   spec.ios.vendored_frameworks = "NFCDocumentReader.xcframework"
+ 
+  spec.resource_bundles = {
+    'NFCDocumentReader' => ["NFCDocumentReader/**/*.{xcassets,strings,ttf,TTF,otf,OTF,json,pem,bundle}"]
+  }
 
   # Removed architecture for simulator
 
