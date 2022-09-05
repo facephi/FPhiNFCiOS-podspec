@@ -43,6 +43,6 @@ Pod::Spec.new do |spec|
   spec.pod_target_xcconfig  = { 'EXCLUDED_ARCHS' => 'armv7' }
   spec.user_target_xcconfig  = { 'EXCLUDED_ARCHS' => 'armv7' }
 
-  spec.dependency 'OpenSSL-Universal', '1.1.1300'
+  spec.dependency 'OpenSSL-Universal', '1.1.1700'
 
 end
