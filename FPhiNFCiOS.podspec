@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "FPhiNFCiOS"
-  spec.version      = "2.3.3"
+  spec.version      = "2.3.4"
   spec.summary      = "Component for NFC and liveness test"
   spec.ios.deployment_target  = "13.0"
   spec.static_framework = true
@@ -28,10 +28,6 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => "https://github.com/facephi/FPhiNFCiOS-podspec.git", :tag => "#{spec.version}" }
 
   spec.ios.vendored_frameworks = "NFCDocumentReader.xcframework"
- 
-  spec.resource_bundles = {
-    'NFCDocumentReader' => ["NFCDocumentReader/**/*.{xcassets,strings,ttf,TTF,otf,OTF,json,pem,bundle}"]
-  }
 
   # Removed architecture for simulator
 
@@ -43,6 +39,6 @@ Pod::Spec.new do |spec|
   spec.pod_target_xcconfig  = { 'EXCLUDED_ARCHS' => 'armv7' }
   spec.user_target_xcconfig  = { 'EXCLUDED_ARCHS' => 'armv7' }
 
-  spec.dependency 'OpenSSL-Universal', '1.1.1700'
+  spec.dependency 'OpenSSL-Universal', '1.1.1501'
 
 end
